@@ -1,0 +1,10 @@
+  const { data, isLoading, isError, error } = useQuery({
+    // queryKey: ["posts"],
+    // queryFn: fetchPosts,
+    // gcTime: 1000,                          //
+    // staleTime: 10000,                      // stale time hoga toh server ko req nahi jaegi
+    // refetchInterval: 1000,                 // kitne daer me data fetch like stocks
+    // refetchIntervalInBackground: true,     // if tab change do u want in background
+    queryKey: ["posts", pageNumber],
+    queryFn: () => fetchPosts(pageNumber),
+  });

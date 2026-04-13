@@ -1,0 +1,27 @@
+react  query fetch data from catche but 
+    the old version of fetching data hit every time to server for data 
+        till 5 minute
+            cache update automtically so we get latest info
+                gctime 
+
+
+Stale time 
+    kuch time jsiek baad purana data is old 
+        after then it hit to server 
+            in react query its def 0 , so it hits every time to server  
+        
+    if Data is in catch so we are requesting to seerver
+    jb tk fresh h tb tk requ baar baar hi nahi hogi in server 
+
+
+
+
+Polling
+    jo milisecond me things changes like Stocks Price
+
+
+
+
+
+user ne kiss card pr click 
+    i want that id
