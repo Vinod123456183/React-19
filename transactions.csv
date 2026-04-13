@@ -1,0 +1,41 @@
+Date,Description,Category,Type,Amount,Account
+2024-01-02,Salary Deposit,Income,income,85000,Savings
+2024-01-03,Netflix Subscription,Entertainment,expense,-649,Credit Card
+2024-01-05,Swiggy Order,Food & Dining,expense,-520,UPI
+2024-01-07,Electricity Bill,Utilities,expense,-1800,Net Banking
+2024-01-08,Freelance Payment,Income,income,25000,Savings
+2024-01-10,Amazon Shopping,Shopping,expense,-3200,Credit Card
+2024-01-12,Gym Membership,Health & Fitness,expense,-2500,UPI
+2024-01-14,Zomato Order,Food & Dining,expense,-450,UPI
+2024-01-15,Investment Return,Income,income,12000,Savings
+2024-01-18,Fuel - Petrol,Transportation,expense,-2200,UPI
+2024-01-20,Internet Bill,Utilities,expense,-999,Net Banking
+2024-01-22,Book Store,Education,expense,-850,UPI
+2024-01-25,Rent Payment,Housing,expense,-18000,Net Banking
+2024-01-27,Coffee & Snacks,Food & Dining,expense,-380,UPI
+2024-01-30,Spotify Premium,Entertainment,expense,-119,Credit Card
+2024-02-01,Salary Deposit,Income,income,85000,Savings
+2024-02-03,Doctor Visit,Health & Fitness,expense,-1500,UPI
+2024-02-05,Grocery Store,Food & Dining,expense,-3400,Credit Card
+2024-02-07,Online Course,Education,expense,-4999,Credit Card
+2024-02-10,Movie Tickets,Entertainment,expense,-800,UPI
+2024-02-12,Freelance Payment,Income,income,18000,Savings
+2024-02-14,Valentine Dinner,Food & Dining,expense,-2800,Credit Card
+2024-02-17,Electricity Bill,Utilities,expense,-1650,Net Banking
+2024-02-20,Uber Rides,Transportation,expense,-1100,UPI
+2024-02-22,Clothes Shopping,Shopping,expense,-5500,Credit Card
+2024-02-25,Rent Payment,Housing,expense,-18000,Net Banking
+2024-02-27,Stock Dividend,Income,income,3500,Savings
+2024-03-01,Salary Deposit,Income,income,85000,Savings
+2024-03-04,Swiggy Instamart,Food & Dining,expense,-1200,UPI
+2024-03-06,Insurance Premium,Health & Fitness,expense,-8000,Net Banking
+2024-03-08,Airpods Purchase,Shopping,expense,-14999,Credit Card
+2024-03-10,Consulting Fee,Income,income,32000,Savings
+2024-03-12,Petrol,Transportation,expense,-2500,UPI
+2024-03-15,Internet Bill,Utilities,expense,-999,Net Banking
+2024-03-18,Restaurant Dinner,Food & Dining,expense,-3200,Credit Card
+2024-03-20,Gym Membership,Health & Fitness,expense,-2500,UPI
+2024-03-22,Weekend Trip,Transportation,expense,-8500,Credit Card
+2024-03-25,Rent Payment,Housing,expense,-18000,Net Banking
+2024-03-27,Amazon Prime,Entertainment,expense,-1499,Credit Card
+2024-03-30,Freelance Bonus,Income,income,15000,Savings
