@@ -1,0 +1,38 @@
+src/
+│
+├── server.ts                // Entry point - starts the server
+├── app.ts                   // Express app configuration
+│
+├── config/                  // App configuration files
+│   ├── env.ts               // Environment variables setup
+│   ├── db.ts                // Database connection setup
+│   └── index.ts             // Centralized config exports
+│
+├── routes/                  // All route definitions
+│   ├── index.ts             // Combine all routes
+│   └── user.routes.ts       // Example route file
+│
+├── controllers/             // Route handlers (business logic entry)
+│   └── user.controller.ts
+│
+├── models/                  // Database models (Mongoose / Prisma / Sequelize etc.)
+│   └── user.model.ts
+│
+├── middleware/              // Custom middleware
+│   ├── auth.middleware.ts
+│   ├── error.middleware.ts
+│   └── validate.middleware.ts
+│
+├── services/                // Business logic layer (important in production)
+│   └── user.service.ts
+│
+├── utils/                   // Helper functions
+│   ├── logger.ts
+│   ├── ApiError.ts
+│   └── asyncHandler.ts
+│
+├── types/                   // Custom TypeScript types & interfaces
+│   └── express.d.ts
+│
+└── constants/               // App constants
+    └── index.ts

@@ -1,0 +1,104 @@
+frontend/
+│
+├── public/
+│
+├── src/
+│   │
+│   ├── app/                     
+│   │   ├── App.tsx
+│   │   ├── main.tsx
+│   │   ├── router.tsx
+│   │   ├── store.ts
+│   │   ├── providers.tsx
+│   │   └── constants.ts
+│   │
+│   ├── features/                # 🔥 Business/domain logic
+│   │   ├── auth/
+│   │   │   ├── components/      # Feature-specific UI
+│   │   │   ├── hooks/
+│   │   │   ├── api/
+│   │   │   ├── pages/
+│   │   │   ├── types/
+│   │   │   ├── validators/
+│   │   │   ├── auth.slice.ts
+│   │   │   └── index.ts
+│   │   │
+│   │   ├── users/
+│   │   ├── dashboard/
+│   │   └── index.ts
+│   │
+│   ├── components/              # 🧩 GLOBAL COMPONENTS (important change)
+│   │   │
+│   │   ├── ui/                  # 🔹 shadcn components (DO NOT TOUCH MUCH)
+│   │   │   ├── button.tsx
+│   │   │   ├── input.tsx
+│   │   │   ├── dialog.tsx
+│   │   │   ├── dropdown-menu.tsx
+│   │   │   └── ...
+│   │   │
+│   │   ├── common/              # 🔹 Small reusable combos
+│   │   │   ├── FormField.tsx
+│   │   │   ├── PageLoader.tsx
+│   │   │   ├── EmptyState.tsx
+│   │   │   └── index.ts
+│   │   │
+│   │   ├── layout/              # 🔥 Header, Footer, Sidebar (IMPORTANT)
+│   │   │   ├── header/
+│   │   │   │   ├── Header.tsx
+│   │   │   │   ├── HeaderNav.tsx
+│   │   │   │   └── index.ts
+│   │   │   │
+│   │   │   ├── footer/
+│   │   │   │   ├── Footer.tsx
+│   │   │   │   └── index.ts
+│   │   │   │
+│   │   │   ├── sidebar/
+│   │   │   │   ├── Sidebar.tsx
+│   │   │   │   └── index.ts
+│   │   │   │
+│   │   │   ├── navbar/
+│   │   │   │   ├── Navbar.tsx
+│   │   │   │   └── index.ts
+│   │   │   │
+│   │   │   └── index.ts
+│   │   │
+│   │   └── index.ts
+│   │
+│   ├── layouts/                 # 📐 Page wrappers
+│   │   ├── MainLayout.tsx
+│   │   ├── DashboardLayout.tsx
+│   │   ├── AuthLayout.tsx
+│   │   └── index.ts
+│   │
+│   ├── pages/                   # 🧭 Route-level pages
+│   │   ├── home/
+│   │   ├── about/
+│   │   ├── not-found/
+│   │   └── index.ts
+│   │
+│   ├── lib/                     # ⚡ shadcn recommended (IMPORTANT)
+│   │   ├── utils.ts             # cn() helper
+│   │   ├── axios.ts
+│   │   └── helpers.ts
+│   │
+│   ├── hooks/                   # Global hooks
+│   │   ├── useDebounce.ts
+│   │   ├── useToggle.ts
+│   │   └── index.ts
+│   │
+│   ├── config/                  # Global constants/config
+│   │   ├── routes.ts
+│   │   ├── roles.ts
+│   │   └── env.ts
+│   │
+│   ├── types/
+│   │   ├── global.types.ts
+│   │   └── api.types.ts
+│   │
+│   ├── styles/
+│   ├── assets/
+│   └── vite-env.d.ts
+│
+├── components.json              # shadcn config
+├── package.json
+└── ...

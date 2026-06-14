@@ -1,0 +1,288 @@
+Perfect 👍
+Here is the **complete step-by-step sequence** to set up a **Node.js + Express + TypeScript** project from scratch (latest standard setup – 2026).
+
+Everything is in proper order.
+
+---
+
+# ✅ STEP 1: Create Project Folder
+
+```bash
+mkdir my-ts-app
+cd my-ts-app
+```
+
+---
+
+# ✅ STEP 2: Initialize Node Project
+
+```bash
+npm init -y
+```
+
+---
+
+# ✅ STEP 3: Install Dependencies
+
+## 📦 Production Dependencies
+
+```bash
+npm install express dotenv cors helmet morgan nodemon
+```
+
+## 📦 Type Definitions (Important for TypeScript)
+
+```bash
+npm install -D @types/express @types/node @types/cors @types/morgan
+```
+
+## 📦 Dev Dependencies
+
+```bash
+npm install -D typescript ts-node-dev
+```
+
+---
+
+# ✅ STEP 4: Initialize TypeScript
+
+```bash
+npx tsc --init
+```
+
+Now modify `tsconfig.json` to this clean configuration:
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    "types": ["node"],
+
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    "isolatedModules": true
+  },
+  "include": ["src"]
+}
+```
+
+---
+
+# ✅ STEP 5: Update package.json Scripts
+
+Modify the scripts section:
+
+```json
+"scripts": {
+  "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+  "build": "tsc",
+  "start": "node dist/server.js"
+}
+```
+
+---
+
+# ✅ STEP 6: Create Professional Folder Structure
+
+Run:
+
+```bash
+mkdir src
+mkdir src/config src/controllers src/routes src/models src/middleware src/utils
+touch src/server.ts
+touch .env .gitignore
+```
+
+If Windows PowerShell:
+
+```powershell
+md src
+md src\config,src\controllers,src\routes,src\models,src\middleware,src\utils
+ni src\server.ts,.env,.gitignore
+```
+
+---
+
+# ✅ FINAL FOLDER STRUCTURE
+
+```
+my-ts-app/
+│
+├── src/
+│   ├── config/
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   ├── middleware/
+│   ├── utils/
+│   └── server.ts
+│
+├── dist/
+├── .env
+├── .gitignore
+├── package.json
+├── tsconfig.json
+```
+
+---
+
+# ✅ STEP 7: Setup Basic Express Server (TypeScript)
+
+### src/server.ts
+
+```ts
+import express, { Application, Request, Response } from "express";
+import dotenv from "dotenv";
+import cors from "cors";
+import helmet from "helmet";
+import morgan from "morgan";
+
+dotenv.config();
+
+const app: Application = express();
+
+// Middlewares
+app.use(express.json());
+app.use(cors());
+app.use(helmet());
+app.use(morgan("dev"));
+
+app.get("/", (req: Request, res: Response) => {
+  res.send("API Running with TypeScript 🚀");
+});
+
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
+```
+
+---
+
+# ✅ STEP 8: Setup .env
+
+```
+PORT=5000
+```
+
+---
+
+# ✅ STEP 9: Setup .gitignore
+
+```
+node_modules
+dist
+.env
+```
+
+---
+
+# ✅ STEP 10: Run Project
+
+## Development Mode
+
+```bash
+npm run dev
+```
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+## Start Production
+
+```bash
+npm start
+```
+
+---
+
+# 🚀 Optional (MongoDB Setup with TypeScript)
+
+Install:
+
+```bash
+npm install mongoose
+npm install -D @types/mongoose
+```
+
+Create:
+
+### src/config/db.ts
+
+```ts
+import mongoose from "mongoose";
+
+const connectDB = async (): Promise<void> => {
+  try {
+    await mongoose.connect(process.env.MONGO_URI as string);
+    console.log("MongoDB Connected");
+  } catch (error) {
+    console.error(error);
+    process.exit(1);
+  }
+};
+
+export default connectDB;
+```
+
+Then import in `server.ts`:
+
+```ts
+import connectDB from "./config/db";
+connectDB();
+```
+
+---
+
+# 🔥 FULL QUICK COMMAND SEQUENCE (Copy Version)
+
+```bash
+mkdir my-ts-app
+cd my-ts-app
+npm init -y
+npm install express dotenv cors helmet morgan
+npm install -D typescript ts-node-dev @types/node @types/express @types/cors @types/morgan
+npx tsc --init
+mkdir src
+mkdir src/config src/controllers src/routes src/models src/middleware src/utils
+touch src/server.ts .env .gitignore
+```
+
+Then:
+
+* Edit `tsconfig.json`
+* Update `package.json`
+* Add server code
+* Run `npm run dev`
+
+---
+
+If you want next level:
+
+* ✅ Full MVC example with user route/controller
+* ✅ JWT Authentication
+* ✅ Zod validation
+* ✅ Prisma instead of Mongoose
+* ✅ Production enterprise folder structure
+* ✅ Clean Architecture version
+
+Tell me what level you want next 🚀
