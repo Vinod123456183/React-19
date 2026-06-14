@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+body {
+  /* background-color: rgb(219, 219, 219); */
+  /* background-color: #1b1f23; */
+  background-color: #040404;
+  background-color: white;
+}
+
+:root {
+  --pad-x-lg-device: 7px;
+  --pad-2-x-lg-device: 15px;
+  --padl: 10px;
+}
+
+@layer components {
+  .page-container {
+    @apply max-w-7xl mx-auto  2xl:max-w-[1860px];
+  }
+  .best-page-container-2 {
+    @apply px-2 max-w-6xl mx-auto;
+  }
+
+  .inner-padding {
+    @apply px-4;
+    @apply p-4;
+  }
+
+  .bara-container {
+    @apply px-12 max-w-5xl  mx-auto;
+  }
+  .bara-container2 {
+    @apply px-20 max-w-4xl  mx-auto;
+  }
+}
